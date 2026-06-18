@@ -61,7 +61,7 @@ public class Program
                 }
                 catch (WebSocketException)
                 {
-                    Console.WriteLine("⚠️ Notice: Local Agent connection was severed abruptly.");
+                    Console.WriteLine("⚠️ Notice: Local Agent connection was severed.");
                 }
                 finally
                 {

@@ -11,7 +11,7 @@ COPY . ./
 RUN dotnet publish -c Release -o /app
 
 # Use the lightweight ASP.NET runtime image for final execution
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 COPY --from=build /app .
 
